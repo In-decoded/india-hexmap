@@ -4,21 +4,33 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "india-hexmap"
-version = "0.1.0"
+version = "0.1.6"
 description = "Draw a hex-tile map of India's states and UTs colored by your own data."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-authors = [{ name = "Your Name" }]
+authors = [{ name = "Arnab Jena", email = "arnabjena2003@gmail.com" }]
 dependencies = [
     "matplotlib>=3.5",
 ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
 
 [project.urls]
-Homepage = "https://github.com/yourname/india-hexmap"
+Homepage = "https://github.com"
 
 [project.scripts]
 india-hexmap = "india_hexmap.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["india_hexmap*"]
+include = ["india_hexmap", "india_hexmap.*"]
